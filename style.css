@@ -190,6 +190,9 @@ canvas {
 }
 
 /* ABOUT SECTION */
+#about {
+  scale: 0.9;
+}
 /* Base styling for tech items */
 .tech-item {
   position: relative;
