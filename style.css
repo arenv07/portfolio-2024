@@ -190,15 +190,27 @@ canvas {
 }
 
 /* ABOUT SECTION */
-#about {
-  scale: 0.8;
+@media (min-width: 576px) {
+  #about {
+    scale: 0.7;
+  }
+  #experience {
+    scale: 0.7;
+  }
+  #works {
+    scale: 0.7;
+  }
+  #services {
+    scale: 0.7;
+  }
+  #contact {
+    scale: 0.7;
+  }
+  #footer {
+    scale: 0.7;
+  }
 }
-#experience {
-  scale: 0.7;
-}
-#works {
-  scale: 0.8;
-}
+
 
 /* Base styling for tech items */
 .tech-item {
