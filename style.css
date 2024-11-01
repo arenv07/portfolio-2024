@@ -15,6 +15,9 @@ html {
   height: 100%;
 } */
 
+#about {
+  scale: 0.8;
+}
 
 .hero {
   width: 100vw;
