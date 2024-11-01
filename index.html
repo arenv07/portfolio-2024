@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aren Villano | UX Designer & Front-End Developer Portfolio</title>
+  <meta name="description" content="Discover the portfolio of Aren Villano, a skilled UX designer and front-end developer with expertise in user-centered design and responsive web development.">
+  <meta name="keywords" content="Aren Villano, web development, UX/UI design, portfolio, projects, UX designer, front-end developer">
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Favicon -->
+  <link rel="icon" href="./images/favicon.ico">
+
+  <!-- Font Awesome Link -->
+  <script src="https://kit.fontawesome.com/dbda89953b.js" crossorigin="anonymous"></script>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="./tailwind.config.js"></script>
+  <!-- Fontshare Switzer Font -->
+  <link href="https://api.fontshare.com/v2/css?f[]=switzer@200,300,400,500,600,700,800,900&display=swap"
+    rel="stylesheet">
+  <!-- Fontshare Clash Display Font -->
+  <link href="https://api.fontshare.com/v2/css?f[]=clash-display@300,400,500,600,700&display=swap" rel="stylesheet">
+  <!-- Fontshare General Sans Font -->
+  <link href="https://api.fontshare.com/v2/css?f[]=general-sans@300,400,500,600,700&display=swap" rel="stylesheet">
+</head>
+
+<body class="overflow-x-hidden">
+  <!-- <div>
+    <img src="./images/" alt="">
+  </div> -->
+
+  <!-- <nav class="w-full fixed px-5 lg:px-8 xl:px-[6%] py-4 flex items-center justify-between z-50 bg-white bg-opacity-80 backdrop-blur-sm"> -->
+  <header
+    class="w-full fixed px-5 lg:px-8 xl:px-[6%] py-4 flex items-center justify-between z-50 transition-all duration-300 ease-in-out">
+    <img src="./images/av-logo.png" alt="Aren Villano Logo" class="w-20 cursor-pointer">
+    <ul class="hidden md:flex items-center gap-6 lg:gap-8 text-black font-bold font-general-sans text-lg lg:text-xl">
+      <li><a href="#home" class="hover:text-custom-red transition-colors">HOME</a></li>
+      <li><a href="#about" class="hover:text-custom-red transition-colors">ABOUT</a></li>
+      <li><a href="#works" class="hover:text-custom-red transition-colors">WORKS</a></li>
+      <li><a href="#services" class="hover:text-custom-red transition-colors">SERVICES</a></li>
+      <li><a href="#contact" class="hover:text-custom-red transition-colors">CONTACT</a></li>
+    </ul>
+
+    <button class="block md:hidden ml-3" onclick="openMenu()">
+      <img src="./images/menu-black.png" alt="Mobile navigation menu icon" class="w-8">
+    </button>
+
+    <!-- mobile menu -->
+    <ul id="sideMenu"
+      class="text-2xl flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-matte-black text-white transition duration-500">
+
+      <div class="absolute right-6 top-6" onclick="closeMenu()">
+        <img src="./images/close-white.png" alt="Close mobile navigation menu icon" class="w-6 cursor-pointer">
+      </div>
+      <li><a href="#home" onclick="closeMenu()">HOME</a></li>
+      <li><a href="#about" onclick="closeMenu()">ABOUT</a></li>
+      <li><a href="#works" onclick="closeMenu()">WORKS</a></li>
+      <li><a href="#services" onclick="closeMenu()">SERVICES</a></li>
+      <li><a href="#contact" onclick="closeMenu()">CONTACT</a></li>
+    </ul>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="relative w-full h-screen flex flex-col items-center justify-center px-4">
+      <div
+        class="w-full max-w-4xl text-center flex flex-col items-center justify-center gap-4 text-white opacity-0 animate-slide-up">
+        <!-- Desktop Image -->
+        <img src="./images/hero-img.png" alt="Hero section main image showcasing Aren Villano cover image - UI Design | UX Research | Front-end Development"
+          class="hidden sm:block w-32 sm:w-full md:w-full lg:w-full xl:w-full animate-scale-fade" id="hero-img">
+
+        <!-- Mobile Image -->
+        <img src="./images/mobile-hero-img.png" alt="Hero section main image showcasing Aren Villano cover image - UI Design | UX Research | Front-end Development" class="block sm:hidden w-full animate-scale-fade">
+
+        <!-- Buttons Container -->
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mt-12 w-full hero-btns">
+          <!-- Contact Button -->
+          <a href="#contact"
+            class="w-full sm:w-auto px-10 py-3 border border-black rounded-full bg-[#ffcb43] bg-gradient-to-r from-[#ffcb43] via-[#ff6425] to-[#ff0016] text-wrap flex items-center justify-center gap-2 animate-slide-in animate-fade-in"
+            style="--slide-delay: 0.4s">
+            contact me
+            <img src="./images/right-arrow-white.png" alt="Right arrow icon for contact link" class="w-4">
+          </a>
+
+          <!-- Resume Button -->
+          <a href="./Resume.pdf" download
+            class="w-full sm:w-auto px-10 py-3 border rounded-full border-gray-100 flex items-center justify-center gap-2 bg-matte-black text-white animate-slide-in animate-fade-in"
+            style="--slide-delay: 0.6s">
+            my resume
+            <img src="./images/download-icon-white.png" alt="Download icon for resume" class="w-4">
+          </a>
+        </div>
+    </section>
+
+    <!-- Scroll Indicator -->
+    <div
+      class="absolute bottom-10 left-1/2 transform -translate-x-1/2 flex flex-col items-center text-black animate-slow-bounce cursor-pointer scroll-indicator">
+      <a href="#about">
+        <p class="mb-2 text-sm">Scroll for more</p>
+      </a>
+
+      <a href="#about"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+          stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+        </svg></a>
+    </div>
+    </div>
+
+    <!-- Scroll for more animation -->
+    <style>
+      @keyframes slow-bounce {
+
+        0%,
+        100% {
+          transform: translateY(-25%) translateX(-50%);
+          animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+        }
+
+        50% {
+          transform: translateY(0) translateX(-50%);
+          animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+        }
+      }
+
+      .animate-slow-bounce {
+        animation: slow-bounce 2s infinite;
+      }
+    </style>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="w-full min-h-screen px-4 md:px-8 lg:px-[12%] py-20 scroll-mt-20">
+      <div class="max-w-7xl mx-auto">
+        <h4 class="text-center mb-2 text-lg text-custom-red">Introduction</h4>
+        <h2 class="text-center text-4xl md:text-5xl font-semibold mb-20">ABOUT ME</h2>
+
+        <div class="flex flex-col lg:flex-row items-center justify-center gap-10 lg:gap-20">
+          <!-- Image column -->
+          <div class="flex-shrink-0">
+            <img src="./images/headshot.jpeg" alt="Profile headshot of Aren Villano" class="w-64 sm:w-80 rounded-3xl object-cover">
+          </div>
+
+          <!-- Content column -->
+          <div class="flex-1 max-w-2xl">
+            <p class="mb-6 text-base md:text-lg font-medium text-center sm:text-left">
+              I am a recent graduate of Indiana University Bloomington, earning a Bachelor's Degree in Informatics with
+              double minors in Human-Centered Computing and Web Design & Development. <br><span
+                class="flex gap-2 items-center mt-2 sm:justify-start justify-center"><img src="images/pin.png" alt="Location pin icon representing Youngstown, Ohio"
+                  class="w-4 h-4">Youngstown, Ohio</span>
+            </p>
+            <!-- Code to include about section link -->
+            <!-- View my full profile <span class="underline text-custom-red"><a href="about.html">here</a></span> -->
+
+            <!-- Skills grid -->
+            <ul class="grid grid-cols-1 sm:grid-cols-auto gap-4 md:gap-6 mb-4">
+              <!-- UI DESIGN -->
+              <a href="ui-design.html">
+                <li
+                  class="border border-gray-900 rounded-xl p-6 cursor-pointer transition-all duration-300 hover:bg-[#FAF9F6] hover:-translate-y-1 hover:shadow-[4px_4px_0_black] bg-[#E5E4E3]">
+                  <img src="./images/ui-design-icon.png" alt="Icon representing UI design services, including wireframing and prototyping" class="w-7 mt-3">
+                  <h3 class="my-4 font-semibold text-gray-700">UI Design</h3>
+                  <p class="text-gray-600 text-sm">Wireframing, prototyping, information architecture</p>
+                </li>
+              </a>
+
+              <!-- UX RESEARCH -->
+              <li
+                class="border border-gray-900 rounded-xl p-6 cursor-pointer transition-all duration-300 hover:bg-[#FAF9F6] hover:-translate-y-1 hover:shadow-[4px_4px_0_black] bg-[#E5E4E3]">
+                <img src="./images/ux-research-icon.png" alt="Icon illustrating UX research, including usability testing and user personas" class="w-7 mt-3">
+                <h3 class="my-4 font-semibold text-gray-700">UX Research</h3>
+                <p class="text-gray-600 text-sm">Usability testing, personas, user research</p>
+              </li>
+
+              <!-- FRONTEND DEV -->
+              <li
+                class="border border-gray-900 rounded-xl p-6 cursor-pointer transition-all duration-300 hover:bg-[#FAF9F6] hover:-translate-y-1 hover:shadow-[4px_4px_0_black] bg-[#E5E4E3]">
+                <img src="./images/frontend-development-icon.png" alt="Icon representing frontend development skills, including HTML, CSS, and JavaScript" class="w-7 mt-3">
+                <h3 class="my-4 font-semibold text-gray-700">Frontend Development</h3>
+                <p class="text-gray-600 text-sm">HTML, CSS, JS</p>
+              </li>
+            </ul>
+
+            <!-- Tools section -->
+            <div>
+              <h4 class="mb-4 text-gray-700 font-medium">Tech I use</h4>
+              <ul class="flex flex-wrap items-center gap-3 sm:gap-5">
+                <li data-tooltip="Figma"
+                  class="tech-item flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-600 rounded-lg cursor-pointer transition-all duration-300 hover:-translate-y-1">
+                  <img src="./images/figma.png" alt="Figma logo, design and prototyping tool" class="w-8">
+                </li>
+                <li data-tooltip="HTML"
+                  class="tech-item flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-600 rounded-lg cursor-pointer transition-all duration-300 hover:-translate-y-1">
+                  <img src="./images/html.png" alt="HTML logo, foundational web markup language" class="w-9">
+                </li>
+                <li data-tooltip="CSS"
+                  class="tech-item flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-600 rounded-lg cursor-pointer transition-all duration-300 hover:-translate-y-1">
+                  <img src="./images/css.png" alt="CSS logo, styling language for web design" class="w-7">
+                </li>
+                <li data-tooltip="React JS"
+                  class="tech-item flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-600 rounded-lg cursor-pointer transition-all duration-300 hover:-translate-y-1">
+                  <img src="./images/react.png" alt="React JS logo, JavaScript library for building user interfaces" class="w-10">
+                </li>
+                <li data-tooltip="TailwindCSS"
+                  class="tech-item flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-600 rounded-lg cursor-pointer transition-all duration-300 hover:-translate-y-1">
+                  <img src="./images/tailwind.png" alt="TailwindCSS logo, utility-first CSS framework" class="w-8">
+                </li>
+                <li data-tooltip="Bootstrap"
+                  class="tech-item flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-600 rounded-lg cursor-pointer transition-all duration-300 hover:-translate-y-1">
+                  <img src="./images/bootstrap.png" alt="Bootstrap logo, front-end framework for responsive design" class="w-8">
+                </li>
+                <li data-tooltip="Git"
+                  class="tech-item flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-600 rounded-lg cursor-pointer transition-all duration-300 hover:-translate-y-1">
+                  <img src="./images/git.png" alt="Git logo, version control system for tracking changes" class="w-7">
+                </li>
+                <li data-tooltip="Optimal Workshop"
+                  class="tech-item flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-600 rounded-lg cursor-pointer transition-all duration-300 hover:-translate-y-1">
+                  <img src="./images/optimal-workshop.png" alt="Optimal Workshop logo, user research and testing tools" class="w-7">
+                </li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience mb-10">
+      <h1 class="text-3xl sm:text-5xl lg:text-5xl mb-4 text-center font-semibold">MY EXPERIENCE</h1>
+      <div class="experience-section">
+        <div class="experience-item">
+          <div class="left-text">
+            <p class="text-lg sm:text-xl lg:text-2xl font-medium">Indiana University</p>
+            <p class="text-base sm:text-lg lg:text-xl">Bachelor's Degree in Informatics</p>
+          </div>
+          <div class="experience-ring">
+            <div class="progress-ring">
+              <svg>
+                <circle cx="75" cy="75" r="70"></circle>
+                <circle class="progress" cx="75" cy="75" r="70"></circle>
+              </svg>
+              <div class="content">
+                <img src="./images/Indiana_Hoosiers_logo.svg" alt="Indiana University Logo" class="iu-logo">
+              </div>
+            </div>
+          </div>
+          <div class="right-text">
+            <p class="text-lg sm:text-xl lg:text-2xl font-medium">2020 - 2024</p>
+            <p class="text-base sm:text-lg lg:text-xl">Bloomington, IN</p>
+          </div>
+        </div>
+
+        <div class="line-container">
+          <div class="line"></div>
+        </div>
+
+        <div class="experience-item">
+          <div class="left-text">
+            <p class="text-lg sm:text-xl lg:text-2xl font-medium">Serve IT</p>
+            <p class="text-base sm:text-lg lg:text-xl">UX Design Intern</p>
+          </div>
+          <div class="experience-ring">
+            <div class="progress-ring">
+              <svg>
+                <circle cx="75" cy="75" r="70"></circle>
+                <circle class="progress" cx="75" cy="75" r="70"></circle>
+              </svg>
+              <div class="content">
+                <img src="./images/serve-it.png" alt="Indiana University Serve IT logo" class="serve-it">
+              </div>
+            </div>
+          </div>
+          <div class="right-text">
+            <p class="text-lg sm:text-xl lg:text-2xl font-medium">Jan 2024 - May 2024</p>
+            <p class="text-base sm:text-lg lg:text-xl">Bloomington, IN</p>
+          </div>
+        </div>
+
+        <div class="line-container">
+          <div class="line"></div>
+        </div>
+
+        <div class="experience-item">
+          <div class="left-text">
+            <p class="text-lg sm:text-xl lg:text-2xl font-medium">PromoterMotor</p>
+            <p class="text-base sm:text-lg lg:text-xl">Digital Design Intern</p>
+          </div>
+          <div class="experience-ring">
+            <div class="progress-ring">
+              <svg>
+                <circle cx="75" cy="75" r="70"></circle>
+                <circle class="progress" cx="75" cy="75" r="70"></circle>
+              </svg>
+              <div class="content">
+                <img src="./images/pm-logo.png" alt="PromoterMotor Logo">
+              </div>
+            </div>
+          </div>
+          <div class="right-text">
+            <p class="text-lg sm:text-xl lg:text-2xl font-medium">May 2024 - Aug 2024</p>
+            <p class="text-base sm:text-lg lg:text-xl">Remote</p>
+          </div>
+        </div>
+
+        <div class="line-container">
+          <div class="line"></div>
+        </div>
+
+        <div class="experience-item">
+          <div class="left-text">
+            <p class="text-lg sm:text-xl lg:text-2xl font-medium">PromoterMotor</p>
+            <p class="text-base sm:text-lg lg:text-xl">Account Executive Intern</p>
+          </div>
+          <div class="experience-ring">
+            <div class="progress-ring">
+              <svg>
+                <circle cx="75" cy="75" r="70"></circle>
+                <circle class="progress" cx="75" cy="75" r="70"></circle>
+              </svg>
+              <div class="content">
+                <img src="./images/pm-logo.png" alt="PromoterMotor Logo">
+              </div>
+            </div>
+          </div>
+          <div class="right-text">
+            <p class="text-lg sm:text-xl lg:text-2xl font-medium">Aug 2024 - Nov 2024</p>
+            <p class="text-base sm:text-lg lg:text-xl">Remote</p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Work Section -->
+    <section id="works" class="w-full px-[12%] py-10 scroll-mt-20">
+      <h4 class="text-center mb-2 text-lg text-custom-red">My Portfolio</h4>
+      <h2 class="text-center text-5xl font-semibold">LATEST WORK</h2>
+      <p class="text-center max-w-2xl mx-auto mt-5 mb-12">I offer services ranging from UI design of mobile and desktop
+        applications, qualitative and quanitative UX research methods, and modern front-end development</p>
+
+      <div class="grid grid-cols-auto my-10 gap-5">
+        <a href="https://thehavenhhc.com/">
+          <div
+            class="aspect-square bg-[url('./images/the-havenhhc.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
+            <div
+              class="bg-[#FAF9F6] w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
+              <div>
+                <h2 class="font-semibold">The Haven HHC</h2>
+                <!-- <p class="text-sm text-gray-700">Web Design <br>& Development</p> -->
+                <p class="text-sm text-gray-700">Web Design & Devlopment</p>
+              </div>
+              <div
+                class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-[#EAEAEA] transition">
+                <!-- <img src="./images/send-icon.png" alt="" class="w-5"> -->
+                <i class="fa-solid fa-arrow-right arrow-icon"></i>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="https://cgi.luddy.indiana.edu/~team37/index.php">
+          <div
+            class="aspect-square bg-[url('./images/eco-routes.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
+            <div
+              class="bg-[#FAF9F6] w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
+              <div>
+                <h2 class="font-semibold">Eco Routes</h2>
+                <!-- <p class="text-sm text-gray-700">Web Design <br>& Development</p> -->
+                <p class="text-sm text-gray-700">Web Design & Devlopment</p>
+              </div>
+              <div
+                class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-[#EAEAEA] transition">
+                <!-- <img src="./images/send-icon.png" alt="" class="w-5"> -->
+                <i class="fa-solid fa-arrow-right arrow-icon"></i>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="https://www.behance.net/gallery/211499617/Mindful-Movement-Conceptual-Mobile-UX-Case-Study">
+          <div
+            class="aspect-square bg-[url('./images/mindful-movement.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
+            <div
+              class="bg-[#FAF9F6] w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
+              <div>
+                <h2 class="font-semibold">Mindful Movement</h2>
+                <p class="text-sm text-gray-700">UI Design & <br>UX Research</p>
+                <!-- <p class="text-sm text-gray-700">UX/UI Design</p> -->
+              </div>
+              <div
+                class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-[#EAEAEA] transition">
+                <!-- <img src="./images/send-icon.png" alt="" class="w-5"> -->
+                <i class="fa-solid fa-arrow-right arrow-icon"></i>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a href="https://www.behance.net/gallery/211494331/Five-Below-Conceptual-Mobile-UX-Redesign">
+          <div
+            class="aspect-square bg-[url('./images/five-below-redesign.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
+            <div
+              class="bg-[#FAF9F6] w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
+              <div>
+                <h2 class="font-semibold">Five Below</h2>
+                <p class="text-sm text-gray-700">UI Design & <br>UX Research</p>
+                <!-- <p class="text-sm text-gray-700">UX/UI Design</p> -->
+              </div>
+              <div
+                class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-[#EAEAEA] transition">
+                <!-- <img src="./images/send-icon.png" alt="" class="w-5"> -->
+                <i class="fa-solid fa-arrow-right arrow-icon"></i>
+              </div>
+            </div>
+          </div>
+        </a>
+
+      </div>
+      <a href="works.html"
+        class="w-max flex items-center justify-center gap-2 text-gray-700 border-[0.5px] border-black rounded-full py-3 px-10 mx-auto my-20 hover:bg-[#FAF9F6] duration-500">Show
+        more <img src="./images/right-arrow-bold.png" alt="Right arrow icon to see more projects" class="w-4"></a>
+
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="w-full px-[12%] py-10 scroll-mt-20">
+      <h4 class="text-center mb-2 text-lg text-custom-red">What I Offer</h4>
+      <h2 class="text-center text-5xl font-semibold">MY SERVICES</h2>
+      <p class="text-center max-w-2xl mx-auto mt-5 mb-12">I offer services ranging from UI design of mobile and desktop
+        applications, qualitative and quanitative UX research methods, and modern front-end development</p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 my-10">
+        <div
+          class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-[4px_4px_0_#000] cursor-pointer hover:bg-[#FAF9F6] hover:-translate-y-1 duration-500 bg-[#C2C2C2]">
+          <img src="./images/ui-design-icon2.png" alt="UI design icon" class="w-12">
+          <h3 class="text-lg my-4 text-gray-700 font-semibold">User Interface Design</h3>
+          <p class="text-sm leading-5">Proficent in wireframing, prototyping, design principles, and much more... </p>
+          <a href="" class="flex items-center gap-2 text-sm mt-5 hover:underline">Read more <img
+              src="./images/right-arrow.png" alt="Read more about user interface design services" class="w-4"></a>
+        </div>
+        <div
+          class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-[4px_4px_0_#000] cursor-pointer hover:bg-[#FAF9F6] hover:-translate-y-1 duration-500 bg-[#C2C2C2]">
+          <img src="./images/user-research.png" alt="UX research icon" class="w-12">
+          <h3 class="text-lg my-4 text-gray-700 mt-3 font-semibold">User Experience Research</h3>
+          <p class="text-sm leading-5">Experienced in qualitative and quanitative UX research methods</p>
+          <a href="" class="flex items-center gap-2 text-sm mt-5 hover:underline">Read more <img
+              src="./images/right-arrow.png" alt="Read more about user experience research services" class="w-4"></a>
+        </div>
+        <div
+          class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-[4px_4px_0_#000] cursor-pointer hover:bg-[#FAF9F6] hover:-translate-y-1 duration-500 bg-[#C2C2C2]">
+          <img src="./images/code.png" alt="Front-end development icon" class="w-12">
+          <h3 class="text-lg my-4 text-gray-700 mt-3 font-semibold">Frontend Development</h3>
+          <p class="text-sm leading-5">Proficent in front-end languages such as HTML, CSS, & JS to code responsive designs</p>
+          <a href="" class="flex items-center gap-2 text-sm mt-5 hover:underline">Read more <img
+              src="./images/right-arrow.png" alt="Read more about front-end development services" class="w-4"></a>
+        </div>
+        <div
+          class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-[4px_4px_0_#000] cursor-pointer hover:bg-[#FAF9F6] hover:-translate-y-1 duration-500 bg-[#C2C2C2]">
+          <img src="./images/ui-design-icon.png" alt="Graphic design and branding icon" class="w-10">
+          <h3 class="text-lg my-4 text-gray-700 font-semibold">Graphic Design & Branding</h3>
+          <p class="text-sm leading-5">Skilled in graphic design and company branding</p>
+          <a href="" class="flex items-center gap-2 text-sm mt-5 hover:underline">Read more <img
+              src="./images/right-arrow.png" alt="Read more about graphic design and branding services" class="w-4"></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="w-full px-[12%] py-10 scroll-mt-20">
+      <h4 class="text-center mb-2 text-lg text-custom-red">Connect with me</h4>
+      <h2 class="text-center text-5xl font-semibold">GET IN TOUCH</h2>
+      <p class="text-center max-w-2xl mx-auto mt-5 mb-12">I'd hove to hear from you! If you would like to get in touch
+        please use the form below.</p>
+
+      <!-- Using web3forms for form submission -->
+      <form method="POST" action="https://api.web3forms.com/submit" class="max-w-2xl mx-auto" onsubmit="clearFields();">
+
+        <input type="hidden" name="access_key" value="c8b50b81-8d43-4908-a968-09f3d0c9050f">
+
+        <div class="grid grid-cols-auto gap-6 mt-10 mb-8">
+          <input type="text" placeholder="Enter your name"
+            class="flex-1 p-3 outline-none border-[0.5px] border-white-400 rounded-md" name="name" required>
+          <input type="email" placeholder="Enter your email"
+            class="flex-1 p-3 outline-none border-[0.5px] border-white-400 rounded-md" name="email" required>
+        </div>
+        <textarea rows="6" placeholder="Enter your message"
+          class="w-full p-4 outline-none border-[0.5px] border-white-400 rounded-md mb-6" name="message" required></textarea>
+        <button
+          class="py-3 px-8 w-max flex items-center justify-between gap-2 bg-matte-black/80 text-white rounded-full mx-auto hover:bg-black duration-500">Submit
+          now <img src="./images/right-arrow-white.png" alt="Right arrow icon indicating form submission" class="w-4"></button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="mt-20">
+    <div class="text-center">
+      <img src="./images/av-logo.png" alt="Aren Villano logo" class="w-20 mx-auto mb-2">
+      <div class="w-max flex items-center gap-2 mx-auto">
+        <img src="./images/email.png" alt="Email icon" class="w-6">
+        arenvillano@gmail.com
+      </div>
+    </div>
+    <div class="text-center sm:flex items-center justify-between border-t border-white mx-[10%] mt-12 py-6">
+      <p>&copy; 2024 Aren Villano. All rights reserved</p>
+      <ul class="flex items-center gap-10 justify-center mt-4 sm:mt-0">
+        <li><a href="https://www.linkedin.com/in/aren-villano">LinkedIn</a></li>
+        <li><a href="https://">Behance</a></li>
+        <li><a href="https://">GitHub</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- Progress bar with rocket -->
+  <div class="progress-bar-container">
+    <div class="progress-bar"></div>
+    <i id="rocket" class="fa-solid fa-shuttle-space"></i>
+  </div>
+
+  <!-- Clear form -->
+  <script>
+    function clearFields() {
+        // Wait for the form to submit before clearing fields
+        setTimeout(() => {
+            document.querySelector('input[name="name"]').value = '';
+            document.querySelector('input[name="email"]').value = '';
+            document.querySelector('textarea[name="message"]').value = '';
+        }, 500); // Delay to allow form submission to process
+    }
+    </script>
+
+  <!-- Three.js and Particle System -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+  <!-- Lenis Scroll and Progress Bar -->
+  <script src="https://cdn.jsdelivr.net/npm/intersection-observer@0.12.2/intersection-observer.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.1/dist/lenis.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@latest/bundled/lenis.js"></script>
+
+  <script>
+    // Add this at the start of your JavaScript file
+    gsap.config({
+      nullTargetWarn: false,
+      force3D: true
+    });
+
+    // Force a refresh of ScrollTrigger
+    ScrollTrigger.refresh();
+
+    // Mobile menu functions
+    function openMenu() {
+      document.getElementById('sideMenu').style.right = '0';
+    }
+
+    function closeMenu() {
+      document.getElementById('sideMenu').style.right = '-16rem';
+    }
+
+    // Initialize Lenis with options
+    const lenis = new Lenis({
+      wrapper: window,
+      content: document.documentElement,
+      smooth: true,
+      lerp: 0.1
+    });
+
+    // Handle smooth scrolling for all anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          lenis.scrollTo(target, {
+            offset: -100, // Adjust based on your navbar height
+            duration: 1.5,
+            easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t))
+          });
+        }
+      });
+    });
+
+    // Progress bar and rocket elements
+    const progressBar = document.querySelector('.progress-bar');
+    const rocket = document.querySelector('#rocket');
+
+    function updateProgressBar(scrollProgress) {
+      const scrollPercentage = scrollProgress * 100;
+      progressBar.style.width = `${scrollPercentage}%`;
+      const rocketWidth = rocket.offsetWidth;
+      const rocketPosition = (scrollPercentage / 100) * (window.innerWidth - rocketWidth);
+      rocket.style.left = `${rocketPosition}px`;
+    }
+
+    // Lenis scroll loop
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+
+    // Lenis scroll event handling
+    lenis.on('scroll', ({ progress }) => {
+      planeMaterial.uniforms.uScroll.value = progress;
+      updateProgressBar(progress);
+    });
+
+    // Initial progress update
+    updateProgressBar(0);
+
+    // Handle window resize
+    window.addEventListener('resize', () => {
+      updateProgressBar(lenis.progress);
+    });
+
+    // Three.js setup and animation
+    const scene = new THREE.Scene();
+    const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+    const renderer = new THREE.WebGLRenderer({ antialias: true });
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    document.body.appendChild(renderer.domElement);
+
+    const planeGeometry = new THREE.PlaneGeometry(2, 2);
+    const planeMaterial = new THREE.ShaderMaterial({
+      uniforms: {
+        uScroll: { value: 0 },
+        uColors: {
+          value: [
+            new THREE.Color(0xFAF9F6),
+            new THREE.Color(0xD8D8D8),
+            new THREE.Color(0xCACACA),
+            new THREE.Color(0xBABABA)
+          ]
+        }
+      },
+      vertexShader: `
+        varying vec2 vUv;
+        void main() {
+          vUv = uv;
+          gl_Position = vec4(position, 1.0);
+        }
+      `,
+      fragmentShader: `
+        uniform float uScroll;
+        uniform vec3 uColors[4];
+        varying vec2 vUv;
+        
+        void main() {
+          float scrollSection = floor(uScroll * 3.0);
+          float t = fract(uScroll * 3.0);
+          vec3 color1 = uColors[int(scrollSection)];
+          vec3 color2 = uColors[int(min(scrollSection + 1.0, 3.0))];
+          vec3 finalColor = mix(color1, color2, t);
+          gl_FragColor = vec4(finalColor, 1.0);
+        }
+      `,
+      depthWrite: false
+    });
+
+    const backgroundPlane = new THREE.Mesh(planeGeometry, planeMaterial);
+    backgroundPlane.material.side = THREE.DoubleSide;
+    backgroundPlane.position.z = -1;
+    scene.add(backgroundPlane);
+
+    const particles = 250;
+    const geometry = new THREE.BufferGeometry();
+    const positions = new Float32Array(particles * 3);
+
+    for (let i = 0; i < positions.length; i++) {
+      positions[i] = (Math.random() - 0.5) * 800;
+    }
+
+    geometry.setAttribute('position', new THREE.BufferAttribute(positions, 3));
+
+    const material = new THREE.PointsMaterial({
+      color: 0x28282B,
+      size: 1.3,
+    });
+
+    const particleSystem = new THREE.Points(geometry, material);
+    scene.add(particleSystem);
+
+    camera.position.z = 500;
+
+    function animate() {
+      requestAnimationFrame(animate);
+      particleSystem.rotation.y += 0.0005;
+      particleSystem.rotation.x += 0.00025;
+      renderer.render(scene, camera);
+    }
+
+    // Handle window resize for Three.js
+    window.addEventListener('resize', () => {
+      renderer.setSize(window.innerWidth, window.innerHeight);
+      camera.aspect = window.innerWidth / window.innerHeight;
+      camera.updateProjectionMatrix();
+    });
+
+    animate();
+
+    // Add GSAP animations for each section
+    gsap.registerPlugin(ScrollTrigger);
+
+    // About Section Main Content Animation (header and intro)
+    gsap.from("#about .max-w-7xl > h4, #about .max-w-7xl > h2", {
+      scrollTrigger: {
+        trigger: "#about",
+        start: "top 80%",
+        end: "top 20%",
+        toggleActions: "play none none reverse"
+      },
+      y: 20,
+      opacity: 0,
+      duration: 0.8,
+      stagger: 0.2,
+      ease: "power2.out"
+    });
+
+    gsap.from("#experience h1", {
+      scrollTrigger: {
+        trigger: "#experience",
+        start: "top 80%",
+        end: "top 20%",
+        toggleActions: "play none none reverse"
+      },
+      y: 40,
+      opacity: 0,
+      duration: 0.8,
+      stagger: 0.2,
+      ease: "power2.out"
+    });
+
+
+    // Work Section Animation
+    gsap.from("#works h4, #works h2, #works p", {
+      scrollTrigger: {
+        trigger: "#works",
+        start: "top 80%",
+        end: "top 20%",
+        toggleActions: "play none none reverse"
+      },
+      y: 40,
+      opacity: 0,
+      duration: 0.8,
+      stagger: 0.2,
+      ease: "power2.out"
+    });
+
+    // Work portfolio grid animation
+    gsap.from("#works .grid > div", {
+      scrollTrigger: {
+        trigger: "#works .grid",
+        start: "top 80%",
+        end: "top 20%",
+        toggleActions: "play none none reverse"
+      },
+      y: 60,
+      opacity: 0,
+      duration: 0.8,
+      stagger: 0.2,
+      ease: "power3.out"
+    });
+
+    // Services Section Animation (Headers)
+    gsap.from("#services h4, #services h2, #services > p", {
+      scrollTrigger: {
+        trigger: "#services",
+        start: "top 80%",
+        end: "top 20%",
+        toggleActions: "play none none reverse"
+      },
+      y: 40,
+      opacity: 0,
+      duration: 0.8,
+      stagger: 0.2,
+      ease: "power2.out"
+    });
+
+    // Services cards stagger animation
+    // gsap.from("#services .grid > div", {
+    //   scrollTrigger: {
+    //     trigger: "#services .grid",
+    //     start: "top 80%",
+    //     end: "top 20%",
+    //     toggleActions: "play none none reverse",
+    //     markers: false, 
+    //     scrub: false,
+    //     once: false
+    //   },
+    //   y: 60,
+    //   opacity: 0,
+    //   duration: 0.8,
+    //   stagger: 0.15,
+    //   ease: "power2.out"
+    // });
+
+    // Contact Section Animation
+    gsap.from("#contact h4, #contact h2, #contact p", {
+      scrollTrigger: {
+        trigger: "#contact",
+        start: "top 80%",
+        end: "top 20%",
+        toggleActions: "play none none reverse"
+      },
+      y: 40,
+      opacity: 0,
+      duration: 0.8,
+      stagger: 0.2,
+      ease: "power2.out"
+    });
+
+    // Contact form animation
+    gsap.from("#contact form", {
+      scrollTrigger: {
+        trigger: "#contact form",
+        start: "top 85%",
+        end: "top 25%",
+        toggleActions: "play none none reverse"
+      },
+      y: 40,
+      opacity: 0,
+      duration: 1,
+      ease: "power3.out"
+    });
+
+    // Footer animation
+    gsap.from("footer > div", {
+      scrollTrigger: {
+        trigger: "footer",
+        start: "top 90%",
+        end: "top 30%",
+        toggleActions: "play none none reverse"
+      },
+      y: 30,
+      opacity: 0,
+      duration: 0.8,
+      stagger: 0.2,
+      ease: "power2.out"
+    });
+
+    // Experience Section Ring Animation
+    document.addEventListener('scroll', function () {
+      const rings = document.querySelectorAll('.progress');
+      const windowHeight = window.innerHeight;
+
+      rings.forEach(ring => {
+        const ringTop = ring.getBoundingClientRect().top;
+        if (ringTop < windowHeight * 0.8) {
+          ring.style.strokeDashoffset = '0';
+        }
+      });
+    });
+  </script>
+  <script src="./script.js"></script>
+
+</body>
+
+</html>
