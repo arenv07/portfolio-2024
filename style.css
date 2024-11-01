@@ -191,12 +191,15 @@ canvas {
 
 /* ABOUT SECTION */
 #about {
-  scale: 0.9;
-}
-
-#experience {
   scale: 0.8;
 }
+#experience {
+  scale: 0.7;
+}
+#works {
+  scale: 0.8;
+}
+
 /* Base styling for tech items */
 .tech-item {
   position: relative;
