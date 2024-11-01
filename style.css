@@ -192,22 +192,22 @@ canvas {
 /* ABOUT SECTION */
 @media (min-width: 576px) {
   #about {
-    scale: 0.7;
+    scale: 0.8;
   }
   #experience {
-    scale: 0.7;
+    scale: 0.8;
   }
   #works {
-    scale: 0.7;
+    scale: 0.8;
   }
   #services {
-    scale: 0.7;
+    scale: 0.8;
   }
   #contact {
-    scale: 0.7;
+    scale: 0.8;
   }
   #footer {
-    scale: 0.7;
+    scale: 0.8;
   }
 }
 
