@@ -21,7 +21,10 @@ tailwind.config = {
         }, 
         maxHeight: {
           'workHeight': '8rem',
-        }
+        },
+        letterSpacing: {
+          'minus-5': '0.05em', // equivalent to -5%
+        },
       }
     },
 
