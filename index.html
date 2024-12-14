@@ -31,9 +31,9 @@
     <img src="./images/av-logo.png" alt="Aren Villano Logo" class="w-20 cursor-pointer">
     <ul class="hidden md:flex items-center gap-6 lg:gap-8 text-black font-bold font-general-sans text-lg lg:text-xl">
       <li><a href="#home" class="hover:text-custom-red transition-colors">HOME</a></li>
-      <li><a href="#about" class="hover:text-custom-red transition-colors">ABOUT</a></li>
       <li><a href="#works" class="hover:text-custom-red transition-colors">WORKS</a></li>
-      <li><a href="#services" class="hover:text-custom-red transition-colors">SERVICES</a></li>
+      <li><a href="#about" class="hover:text-custom-red transition-colors">ABOUT</a></li>
+      <!-- <li><a href="#services" class="hover:text-custom-red transition-colors">SERVICES</a></li> -->
       <li><a href="#contact" class="hover:text-custom-red transition-colors">CONTACT</a></li>
     </ul>
 
@@ -49,9 +49,9 @@
         <img src="./images/close-white.png" alt="Close mobile navigation menu icon" class="w-6 cursor-pointer">
       </div>
       <li><a href="#home" onclick="closeMenu()">HOME</a></li>
-      <li><a href="#about" onclick="closeMenu()">ABOUT</a></li>
       <li><a href="#works" onclick="closeMenu()">WORKS</a></li>
-      <li><a href="#services" onclick="closeMenu()">SERVICES</a></li>
+      <li><a href="#about" onclick="closeMenu()">ABOUT</a></li>
+      <!-- <li><a href="#services" onclick="closeMenu()">SERVICES</a></li> -->
       <li><a href="#contact" onclick="closeMenu()">CONTACT</a></li>
     </ul>
   </header>
@@ -82,7 +82,7 @@
           </a>
 
           <!-- Resume Button -->
-          <a href="./Aren_Villano.pdf" download
+          <a href="./Aren-Villano-Resume.pdf" download
             class="w-full sm:w-auto px-10 py-3 border rounded-full border-gray-100 flex items-center justify-center gap-2 bg-matte-black text-white animate-slide-in animate-fade-in"
             style="--slide-delay: 0.6s">
             my resume
@@ -126,6 +126,95 @@
       }
     </style>
     </div>
+
+    <!-- Work Section -->
+    <section id="works" class="w-full px-[12%] py-10 scroll-mt-20">
+      <h4 class="text-center mb-2 text-lg text-custom-red tracking-minus-5">My Portfolio</h4>
+      <h2 class="text-center text-5xl font-semibold">LATEST WORK</h2>
+      <p class="text-center max-w-2xl mx-auto mt-5 mb-12">View my most recent projects below</p>
+
+      <div class="grid grid-cols-auto my-10 gap-5">
+        <a href="https://thehavenhhc.com/">
+          <div
+            class="aspect-square bg-[url('./images/the-havenhhc.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
+            <div
+              class="bg-[#FAF9F6] w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
+              <div>
+                <h2 class="font-semibold">The Haven HHC</h2>
+                <!-- <p class="text-sm text-gray-700">Web Design <br>& Development</p> -->
+                <p class="text-sm text-gray-700">Web Design & Devlopment</p>
+              </div>
+              <div
+                class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-[#EAEAEA] transition">
+                <!-- <img src="./images/send-icon.png" alt="" class="w-5"> -->
+                <i class="fa-solid fa-arrow-right arrow-icon"></i>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="https://cgi.luddy.indiana.edu/~team37/index.php">
+          <div
+            class="aspect-square bg-[url('./images/eco-routes.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
+            <div
+              class="bg-[#FAF9F6] w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
+              <div>
+                <h2 class="font-semibold">Eco Routes</h2>
+                <!-- <p class="text-sm text-gray-700">Web Design <br>& Development</p> -->
+                <p class="text-sm text-gray-700">Web Design & Devlopment</p>
+              </div>
+              <div
+                class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-[#EAEAEA] transition">
+                <!-- <img src="./images/send-icon.png" alt="" class="w-5"> -->
+                <i class="fa-solid fa-arrow-right arrow-icon"></i>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="https://www.behance.net/gallery/211499617/Mindful-Movement-Conceptual-Mobile-UX-Case-Study">
+          <div
+            class="aspect-square bg-[url('./images/mindful-movement.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
+            <div
+              class="bg-[#FAF9F6] w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
+              <div>
+                <h2 class="font-semibold">Mindful Movement</h2>
+                <p class="text-sm text-gray-700">UI Design & <br>UX Research</p>
+                <!-- <p class="text-sm text-gray-700">UX/UI Design</p> -->
+              </div>
+              <div
+                class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-[#EAEAEA] transition">
+                <!-- <img src="./images/send-icon.png" alt="" class="w-5"> -->
+                <i class="fa-solid fa-arrow-right arrow-icon"></i>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a href="https://www.behance.net/gallery/211494331/Five-Below-Conceptual-Mobile-UX-Redesign">
+          <div
+            class="aspect-square bg-[url('./images/five-below-redesign.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
+            <div
+              class="bg-[#FAF9F6] w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
+              <div>
+                <h2 class="font-semibold">Five Below</h2>
+                <p class="text-sm text-gray-700">UI Design & <br>UX Research</p>
+                <!-- <p class="text-sm text-gray-700">UX/UI Design</p> -->
+              </div>
+              <div
+                class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-[#EAEAEA] transition">
+                <!-- <img src="./images/send-icon.png" alt="" class="w-5"> -->
+                <i class="fa-solid fa-arrow-right arrow-icon"></i>
+              </div>
+            </div>
+          </div>
+        </a>
+
+      </div>
+      <a href="works.html"
+        class="w-max flex items-center justify-center gap-2 text-gray-700 border-[0.5px] border-black rounded-full py-3 px-10 mx-auto my-20 hover:bg-[#FAF9F6] duration-500">Show
+        more <img loading="lazy" src="./images/right-arrow-bold.png" alt="Right arrow icon to see more projects"
+          class="w-4"></a>
+
+    </section>
 
     <!-- About Section -->
     <section id="about" class="w-full min-h-screen px-4 md:px-8 lg:px-[12%] py-20 scroll-mt-20">
@@ -345,97 +434,10 @@
 
     </section>
 
-    <!-- Work Section -->
-    <section id="works" class="w-full px-[12%] py-10 scroll-mt-20">
-      <h4 class="text-center mb-2 text-lg text-custom-red tracking-minus-5">My Portfolio</h4>
-      <h2 class="text-center text-5xl font-semibold">LATEST WORK</h2>
-      <p class="text-center max-w-2xl mx-auto mt-5 mb-12">View my most recent projects below</p>
-
-      <div class="grid grid-cols-auto my-10 gap-5">
-        <a href="https://thehavenhhc.com/">
-          <div
-            class="aspect-square bg-[url('./images/the-havenhhc.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
-            <div
-              class="bg-[#FAF9F6] w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
-              <div>
-                <h2 class="font-semibold">The Haven HHC</h2>
-                <!-- <p class="text-sm text-gray-700">Web Design <br>& Development</p> -->
-                <p class="text-sm text-gray-700">Web Design & Devlopment</p>
-              </div>
-              <div
-                class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-[#EAEAEA] transition">
-                <!-- <img src="./images/send-icon.png" alt="" class="w-5"> -->
-                <i class="fa-solid fa-arrow-right arrow-icon"></i>
-              </div>
-            </div>
-          </div>
-        </a>
-        <a href="https://cgi.luddy.indiana.edu/~team37/index.php">
-          <div
-            class="aspect-square bg-[url('./images/eco-routes.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
-            <div
-              class="bg-[#FAF9F6] w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
-              <div>
-                <h2 class="font-semibold">Eco Routes</h2>
-                <!-- <p class="text-sm text-gray-700">Web Design <br>& Development</p> -->
-                <p class="text-sm text-gray-700">Web Design & Devlopment</p>
-              </div>
-              <div
-                class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-[#EAEAEA] transition">
-                <!-- <img src="./images/send-icon.png" alt="" class="w-5"> -->
-                <i class="fa-solid fa-arrow-right arrow-icon"></i>
-              </div>
-            </div>
-          </div>
-        </a>
-        <a href="https://www.behance.net/gallery/211499617/Mindful-Movement-Conceptual-Mobile-UX-Case-Study">
-          <div
-            class="aspect-square bg-[url('./images/mindful-movement.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
-            <div
-              class="bg-[#FAF9F6] w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
-              <div>
-                <h2 class="font-semibold">Mindful Movement</h2>
-                <p class="text-sm text-gray-700">UI Design & <br>UX Research</p>
-                <!-- <p class="text-sm text-gray-700">UX/UI Design</p> -->
-              </div>
-              <div
-                class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-[#EAEAEA] transition">
-                <!-- <img src="./images/send-icon.png" alt="" class="w-5"> -->
-                <i class="fa-solid fa-arrow-right arrow-icon"></i>
-              </div>
-            </div>
-          </div>
-        </a>
-
-        <a href="https://www.behance.net/gallery/211494331/Five-Below-Conceptual-Mobile-UX-Redesign">
-          <div
-            class="aspect-square bg-[url('./images/five-below-redesign.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
-            <div
-              class="bg-[#FAF9F6] w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
-              <div>
-                <h2 class="font-semibold">Five Below</h2>
-                <p class="text-sm text-gray-700">UI Design & <br>UX Research</p>
-                <!-- <p class="text-sm text-gray-700">UX/UI Design</p> -->
-              </div>
-              <div
-                class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-[#EAEAEA] transition">
-                <!-- <img src="./images/send-icon.png" alt="" class="w-5"> -->
-                <i class="fa-solid fa-arrow-right arrow-icon"></i>
-              </div>
-            </div>
-          </div>
-        </a>
-
-      </div>
-      <a href="works.html"
-        class="w-max flex items-center justify-center gap-2 text-gray-700 border-[0.5px] border-black rounded-full py-3 px-10 mx-auto my-20 hover:bg-[#FAF9F6] duration-500">Show
-        more <img loading="lazy" src="./images/right-arrow-bold.png" alt="Right arrow icon to see more projects"
-          class="w-4"></a>
-
-    </section>
+    
 
     <!-- Services Section -->
-    <section id="services" class="w-full px-[12%] py-10 scroll-mt-20">
+    <!-- <section id="services" class="w-full px-[12%] py-10 scroll-mt-20">
       <h4 class="text-center mb-2 text-lg text-custom-red tracking-minus-5">What I Offer</h4>
       <h2 class="text-center text-5xl font-semibold">MY SERVICES</h2>
       <p class="text-center max-w-2xl mx-auto mt-5 mb-12">I offer services ranging from UI design of mobile and desktop
@@ -447,16 +449,16 @@
           <img loading="lazy" src="./images/ui-design-icon2.png" alt="UI design icon" class="w-12">
           <h3 class="text-lg my-4 text-gray-700 font-semibold">User Interface Design</h3>
           <p class="text-sm leading-5">Proficent in wireframing, prototyping, design principles, and much more... </p>
-          <!-- <a href="" class="flex items-center gap-2 text-sm mt-5 hover:underline">Read more <img
-              src="./images/right-arrow.png" alt="Read more about user interface design services" class="w-4"></a> -->
+          <a href="" class="flex items-center gap-2 text-sm mt-5 hover:underline">Read more <img
+              src="./images/right-arrow.png" alt="Read more about user interface design services" class="w-4"></a>
         </div>
         <div
           class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-[4px_4px_0_#000] cursor-pointer hover:bg-[#FAF9F6] hover:-translate-y-1 duration-500 bg-[#C2C2C2]">
           <img loading="lazy" src="./images/user-research.png" alt="UX research icon" class="w-12">
           <h3 class="text-lg my-4 text-gray-700 mt-3 font-semibold">User Experience Research</h3>
           <p class="text-sm leading-5">Experienced in qualitative and quanitative UX research methods</p>
-          <!-- <a href="" class="flex items-center gap-2 text-sm mt-5 hover:underline">Read more <img
-              src="./images/right-arrow.png" alt="Read more about user experience research services" class="w-4"></a> -->
+          <a href="" class="flex items-center gap-2 text-sm mt-5 hover:underline">Read more <img
+              src="./images/right-arrow.png" alt="Read more about user experience research services" class="w-4"></a>
         </div>
         <div
           class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-[4px_4px_0_#000] cursor-pointer hover:bg-[#FAF9F6] hover:-translate-y-1 duration-500 bg-[#C2C2C2]">
@@ -464,19 +466,19 @@
           <h3 class="text-lg my-4 text-gray-700 mt-3 font-semibold">Frontend Development</h3>
           <p class="text-sm leading-5">Proficent in front-end languages such as HTML, CSS, & JS to code responsive
             designs</p>
-          <!-- <a href="" class="flex items-center gap-2 text-sm mt-5 hover:underline">Read more <img
-              src="./images/right-arrow.png" alt="Read more about front-end development services" class="w-4"></a> -->
+          <a href="" class="flex items-center gap-2 text-sm mt-5 hover:underline">Read more <img
+              src="./images/right-arrow.png" alt="Read more about front-end development services" class="w-4"></a>
         </div>
         <div
           class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-[4px_4px_0_#000] cursor-pointer hover:bg-[#FAF9F6] hover:-translate-y-1 duration-500 bg-[#C2C2C2]">
           <img loading="lazy" src="./images/ui-design-icon.png" alt="Graphic design and branding icon" class="w-10">
           <h3 class="text-lg my-4 text-gray-700 font-semibold">Graphic Design & Branding</h3>
           <p class="text-sm leading-5">Skilled in graphic design and company branding</p>
-          <!-- <a href="" class="flex items-center gap-2 text-sm mt-5 hover:underline">Read more <img
-              src="./images/right-arrow.png" alt="Read more about graphic design and branding services" class="w-4"></a> -->
+          <a href="" class="flex items-center gap-2 text-sm mt-5 hover:underline">Read more <img
+              src="./images/right-arrow.png" alt="Read more about graphic design and branding services" class="w-4"></a>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- Contact Section -->
     <section id="contact" class="w-full px-[12%] py-10 scroll-mt-20">
