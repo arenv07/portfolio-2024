@@ -11,9 +11,9 @@ function closeMenu() {
 
 window.addEventListener('scroll', ()=>{
     if(scrollY > 50){
-        navBar.classList.add('bg-white', 'bg-opacity-50', 'backdrop-blur-lg', 'shadow-sm')
+        navBar.classList.add('FF9E17', 'bg-opacity-50', 'backdrop-blur-lg', 'shadow-sm')
     } else {
-        navBar.classList.remove('bg-white', 'bg-opacity-50', 'backdrop-blur-lg', 'shadow-sm')
+        navBar.classList.remove('FF9E17', 'bg-opacity-50', 'backdrop-blur-lg', 'shadow-sm')
     }
 })
 

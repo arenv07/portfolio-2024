@@ -28,11 +28,11 @@
 <body class="overflow-x-hidden">
   <header
     class="w-full fixed px-5 lg:px-8 xl:px-[6%] py-4 flex items-center justify-between z-50 transition-all duration-300 ease-in-out">
-    <img src="./images/av-logo.png" alt="Aren Villano Logo" class="w-20 cursor-pointer">
+    <img src="./images/av.png" alt="Aren Villano Logo" class="w-20 cursor-pointer">
     <ul class="hidden md:flex items-center gap-6 lg:gap-8 text-black font-bold font-general-sans text-lg lg:text-xl">
       <li><a href="#home" class="hover:text-custom-red transition-colors">HOME</a></li>
-      <li><a href="#works" class="hover:text-custom-red transition-colors">WORKS</a></li>
       <li><a href="#about" class="hover:text-custom-red transition-colors">ABOUT</a></li>
+      <li><a href="#works" class="hover:text-custom-red transition-colors">PROJECTS</a></li>
       <!-- <li><a href="#services" class="hover:text-custom-red transition-colors">SERVICES</a></li> -->
       <li><a href="#contact" class="hover:text-custom-red transition-colors">CONTACT</a></li>
     </ul>
@@ -49,8 +49,8 @@
         <img src="./images/close-white.png" alt="Close mobile navigation menu icon" class="w-6 cursor-pointer">
       </div>
       <li><a href="#home" onclick="closeMenu()">HOME</a></li>
-      <li><a href="#works" onclick="closeMenu()">WORKS</a></li>
       <li><a href="#about" onclick="closeMenu()">ABOUT</a></li>
+      <li><a href="#works" onclick="closeMenu()">PROJECTS</a></li>
       <!-- <li><a href="#services" onclick="closeMenu()">SERVICES</a></li> -->
       <li><a href="#contact" onclick="closeMenu()">CONTACT</a></li>
     </ul>
@@ -62,18 +62,18 @@
       <div
         class="w-full max-w-4xl text-center flex flex-col items-center justify-center gap-4 text-white opacity-0 animate-slide-up">
         <!-- Desktop Image -->
-        <img src="./images/hero-img.png"
+        <img src="./images/hero-45press.png"
           alt="Hero section main image showcasing Aren Villano cover image - UI Design | UX Research | Front-end Development"
           class="hidden sm:block w-32 sm:w-full md:w-full lg:w-full xl:w-full animate-scale-fade" id="hero-img">
 
         <!-- Mobile Image -->
-        <img src="./images/mobile-hero-img.png"
+        <img src="./images/mobile-hero.png"
           alt="Hero section main image showcasing Aren Villano cover image - UI Design | UX Research | Front-end Development"
           class="block sm:hidden w-full animate-scale-fade">
 
         <!-- Buttons Container -->
-        <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mt-12 w-full hero-btns">
-          <!-- Contact Button -->
+        <!-- <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mt-12 w-full hero-btns">
+          
           <a href="#contact"
             class="w-full sm:w-auto px-10 py-3 border border-black rounded-full bg-[#ffcb43] bg-gradient-to-r from-[#ffcb43] via-[#ff6425] to-[#ff0016] text-wrap flex items-center justify-center gap-2 animate-slide-in animate-fade-in"
             style="--slide-delay: 0.4s">
@@ -81,14 +81,14 @@
             <img src="./images/right-arrow-white.png" alt="Right arrow icon for contact link" class="w-4">
           </a>
 
-          <!-- Resume Button -->
+          
           <a href="./Aren-Villano-Resume.pdf" download
             class="w-full sm:w-auto px-10 py-3 border rounded-full border-gray-100 flex items-center justify-center gap-2 bg-matte-black text-white animate-slide-in animate-fade-in"
             style="--slide-delay: 0.6s">
             my resume
             <img src="./images/download-icon-white.png" alt="Download icon for resume" class="w-4">
           </a>
-        </div>
+        </div> -->
     </section>
 
     <!-- Scroll Indicator -->
@@ -127,10 +127,120 @@
     </style>
     </div>
 
+    <!-- About Section -->
+    <section id="about" class="w-full min-h-screen px-4 md:px-8 lg:px-[12%] py-20 scroll-mt-20">
+      <div class="max-w-7xl mx-auto">
+        <h4 class="text-center mb-2 text-lg text-custom-red tracking-minus-5">Introduction</h4>
+        <h2 class="text-center text-4xl md:text-5xl font-semibold mb-20">ABOUT ME</h2>
+
+        <div class="flex flex-col lg:flex-row items-center justify-center gap-10 lg:gap-20">
+          <!-- Image column -->
+          <div class="flex-shrink-0">
+            <img loading="lazy" src="./images/headshot-2.webp" alt="Profile headshot of Aren Villano"
+              class="w-64 sm:w-80 rounded-3xl object-cover border border-black">
+          </div>
+
+          <!-- Content column -->
+          <div class="flex-1 max-w-2xl">
+            <p class="mb-6 text-base md:text-lg font-medium text-center sm:text-left">
+              I am a recent graduate of Indiana University Bloomington, earning a Bachelor's Degree in Informatics with
+               minors in Human-Centered Computing and Web Design & Development. <br><span
+                class="flex gap-2 items-center mt-2 sm:justify-start justify-center"><img loading="lazy"
+                  src="images/pin.png" alt="Location pin icon representing Youngstown, Ohio" class="w-4 h-4">Youngstown,
+                Ohio</span>
+            </p>
+            <!-- Code to include about section link -->
+            <!-- View my full profile <span class="underline text-custom-red"><a href="about.html">here</a></span> -->
+
+            <!-- Skills grid -->
+            <ul class="grid grid-cols-1 sm:grid-cols-auto gap-4 md:gap-6 mb-4">
+              <!-- UI DESIGN -->
+              <a href="ui-design.html">
+                <li
+                  class="border border-black rounded-xl p-6 cursor-pointer transition-all duration-300 hover:bg-[#FAF9F6] hover:-translate-y-1 hover:shadow-[4px_4px_0_black] bg-[#FEA72E]">
+                  <img loading="lazy" src="./images/ui-design-icon.png"
+                    alt="Icon representing UI design services, including wireframing and prototyping" class="w-7 mt-3">
+                  <h3 class="my-4 font-semibold text-black-700">UI Design</h3>
+                  <p class="text-black-600 text-sm">Wireframing, prototyping, information architecture</p>
+                </li>
+              </a>
+
+              <!-- UX RESEARCH -->
+              <li
+                class="border border-black rounded-xl p-6 cursor-pointer transition-all duration-300 hover:bg-[#FAF9F6] hover:-translate-y-1 hover:shadow-[4px_4px_0_black] bg-[#FEA72E]">
+                <img loading="lazy" src="./images/ux-research-icon.png"
+                  alt="Icon illustrating UX research, including usability testing and user personas" class="w-7 mt-3">
+                <h3 class="my-4 font-semibold text-black-700">UX Research</h3>
+                <p class="text-black-600 text-sm">Usability testing, personas, user research</p>
+              </li>
+
+              <!-- FRONTEND DEV -->
+              <li
+                class="border border-black rounded-xl p-6 cursor-pointer transition-all duration-300 hover:bg-[#FAF9F6] hover:-translate-y-1 hover:shadow-[4px_4px_0_black] bg-[#FEA72E]">
+                <img loading="lazy" src="./images/frontend-development-icon.png"
+                  alt="Icon representing frontend development skills, including HTML, CSS, and JavaScript"
+                  class="w-7 mt-3">
+                <h3 class="my-4 font-semibold text-black-700">Frontend Development</h3>
+                <p class="text-black-600 text-sm">HTML, CSS, JS</p>
+              </li>
+            </ul>
+
+            <!-- Tools section -->
+            <div>
+              <h4 class="mb-4 text-black-700 font-medium">Tech I use</h4>
+              <ul class="flex flex-wrap items-center gap-3 sm:gap-5">
+                <li data-tooltip="Figma"
+                  class="tech-item flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-600 rounded-lg cursor-pointer transition-all duration-300 hover:-translate-y-1">
+                  <img loading="lazy" src="./images/figma.png" alt="Figma logo, design and prototyping tool"
+                    class="w-8">
+                </li>
+                <li data-tooltip="HTML"
+                  class="tech-item flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-600 rounded-lg cursor-pointer transition-all duration-300 hover:-translate-y-1">
+                  <img loading="lazy" src="./images/html.png" alt="HTML logo, foundational web markup language"
+                    class="w-9">
+                </li>
+                <li data-tooltip="CSS"
+                  class="tech-item flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-600 rounded-lg cursor-pointer transition-all duration-300 hover:-translate-y-1">
+                  <img loading="lazy" src="./images/css.png" alt="CSS logo, styling language for web design"
+                    class="w-7">
+                </li>
+                <li data-tooltip="React JS"
+                  class="tech-item flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-600 rounded-lg cursor-pointer transition-all duration-300 hover:-translate-y-1">
+                  <img loading="lazy" src="./images/react.png"
+                    alt="React JS logo, JavaScript library for building user interfaces" class="w-10">
+                </li>
+                <li data-tooltip="TailwindCSS"
+                  class="tech-item flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-600 rounded-lg cursor-pointer transition-all duration-300 hover:-translate-y-1">
+                  <img loading="lazy" src="./images/tailwind.png" alt="TailwindCSS logo, utility-first CSS framework"
+                    class="w-8">
+                </li>
+                <li data-tooltip="Bootstrap"
+                  class="tech-item flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-600 rounded-lg cursor-pointer transition-all duration-300 hover:-translate-y-1">
+                  <img loading="lazy" src="./images/bootstrap.png"
+                    alt="Bootstrap logo, front-end framework for responsive design" class="w-8">
+                </li>
+                <li data-tooltip="Git"
+                  class="tech-item flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-600 rounded-lg cursor-pointer transition-all duration-300 hover:-translate-y-1">
+                  <img loading="lazy" src="./images/git.png" alt="Git logo, version control system for tracking changes"
+                    class="w-7">
+                </li>
+                <li data-tooltip="Optimal Workshop"
+                  class="tech-item flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-600 rounded-lg cursor-pointer transition-all duration-300 hover:-translate-y-1">
+                  <img loading="lazy" src="./images/optimal-workshop.png"
+                    alt="Optimal Workshop logo, user research and testing tools" class="w-7">
+                </li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Work Section -->
     <section id="works" class="w-full px-[12%] py-10 scroll-mt-20">
       <h4 class="text-center mb-2 text-lg text-custom-red tracking-minus-5">My Portfolio</h4>
-      <h2 class="text-center text-5xl font-semibold">LATEST WORK</h2>
+      <h2 class="text-center text-5xl font-semibold">PERSONAL PROJECTS</h2>
       <p class="text-center max-w-2xl mx-auto mt-5 mb-12">View my most recent projects below</p>
 
       <div class="grid grid-cols-auto my-10 gap-5">
@@ -216,118 +326,10 @@
 
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="w-full min-h-screen px-4 md:px-8 lg:px-[12%] py-20 scroll-mt-20">
-      <div class="max-w-7xl mx-auto">
-        <h4 class="text-center mb-2 text-lg text-custom-red tracking-minus-5">Introduction</h4>
-        <h2 class="text-center text-4xl md:text-5xl font-semibold mb-20">ABOUT ME</h2>
-
-        <div class="flex flex-col lg:flex-row items-center justify-center gap-10 lg:gap-20">
-          <!-- Image column -->
-          <div class="flex-shrink-0">
-            <img loading="lazy" src="./images/headshot-2.webp" alt="Profile headshot of Aren Villano"
-              class="w-64 sm:w-80 rounded-3xl object-cover">
-          </div>
-
-          <!-- Content column -->
-          <div class="flex-1 max-w-2xl">
-            <p class="mb-6 text-base md:text-lg font-medium text-center sm:text-left">
-              I am a recent graduate of Indiana University Bloomington, earning a Bachelor's Degree in Informatics with
-              double minors in Human-Centered Computing and Web Design & Development. <br><span
-                class="flex gap-2 items-center mt-2 sm:justify-start justify-center"><img loading="lazy"
-                  src="images/pin.png" alt="Location pin icon representing Youngstown, Ohio" class="w-4 h-4">Youngstown,
-                Ohio</span>
-            </p>
-            <!-- Code to include about section link -->
-            <!-- View my full profile <span class="underline text-custom-red"><a href="about.html">here</a></span> -->
-
-            <!-- Skills grid -->
-            <ul class="grid grid-cols-1 sm:grid-cols-auto gap-4 md:gap-6 mb-4">
-              <!-- UI DESIGN -->
-              <a href="ui-design.html">
-                <li
-                  class="border border-gray-900 rounded-xl p-6 cursor-pointer transition-all duration-300 hover:bg-[#FAF9F6] hover:-translate-y-1 hover:shadow-[4px_4px_0_black] bg-[#E5E4E3]">
-                  <img loading="lazy" src="./images/ui-design-icon.png"
-                    alt="Icon representing UI design services, including wireframing and prototyping" class="w-7 mt-3">
-                  <h3 class="my-4 font-semibold text-gray-700">UI Design</h3>
-                  <p class="text-gray-600 text-sm">Wireframing, prototyping, information architecture</p>
-                </li>
-              </a>
-
-              <!-- UX RESEARCH -->
-              <li
-                class="border border-gray-900 rounded-xl p-6 cursor-pointer transition-all duration-300 hover:bg-[#FAF9F6] hover:-translate-y-1 hover:shadow-[4px_4px_0_black] bg-[#E5E4E3]">
-                <img loading="lazy" src="./images/ux-research-icon.png"
-                  alt="Icon illustrating UX research, including usability testing and user personas" class="w-7 mt-3">
-                <h3 class="my-4 font-semibold text-gray-700">UX Research</h3>
-                <p class="text-gray-600 text-sm">Usability testing, personas, user research</p>
-              </li>
-
-              <!-- FRONTEND DEV -->
-              <li
-                class="border border-gray-900 rounded-xl p-6 cursor-pointer transition-all duration-300 hover:bg-[#FAF9F6] hover:-translate-y-1 hover:shadow-[4px_4px_0_black] bg-[#E5E4E3]">
-                <img loading="lazy" src="./images/frontend-development-icon.png"
-                  alt="Icon representing frontend development skills, including HTML, CSS, and JavaScript"
-                  class="w-7 mt-3">
-                <h3 class="my-4 font-semibold text-gray-700">Frontend Development</h3>
-                <p class="text-gray-600 text-sm">HTML, CSS, JS</p>
-              </li>
-            </ul>
-
-            <!-- Tools section -->
-            <div>
-              <h4 class="mb-4 text-gray-700 font-medium">Tech I use</h4>
-              <ul class="flex flex-wrap items-center gap-3 sm:gap-5">
-                <li data-tooltip="Figma"
-                  class="tech-item flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-600 rounded-lg cursor-pointer transition-all duration-300 hover:-translate-y-1">
-                  <img loading="lazy" src="./images/figma.png" alt="Figma logo, design and prototyping tool"
-                    class="w-8">
-                </li>
-                <li data-tooltip="HTML"
-                  class="tech-item flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-600 rounded-lg cursor-pointer transition-all duration-300 hover:-translate-y-1">
-                  <img loading="lazy" src="./images/html.png" alt="HTML logo, foundational web markup language"
-                    class="w-9">
-                </li>
-                <li data-tooltip="CSS"
-                  class="tech-item flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-600 rounded-lg cursor-pointer transition-all duration-300 hover:-translate-y-1">
-                  <img loading="lazy" src="./images/css.png" alt="CSS logo, styling language for web design"
-                    class="w-7">
-                </li>
-                <li data-tooltip="React JS"
-                  class="tech-item flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-600 rounded-lg cursor-pointer transition-all duration-300 hover:-translate-y-1">
-                  <img loading="lazy" src="./images/react.png"
-                    alt="React JS logo, JavaScript library for building user interfaces" class="w-10">
-                </li>
-                <li data-tooltip="TailwindCSS"
-                  class="tech-item flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-600 rounded-lg cursor-pointer transition-all duration-300 hover:-translate-y-1">
-                  <img loading="lazy" src="./images/tailwind.png" alt="TailwindCSS logo, utility-first CSS framework"
-                    class="w-8">
-                </li>
-                <li data-tooltip="Bootstrap"
-                  class="tech-item flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-600 rounded-lg cursor-pointer transition-all duration-300 hover:-translate-y-1">
-                  <img loading="lazy" src="./images/bootstrap.png"
-                    alt="Bootstrap logo, front-end framework for responsive design" class="w-8">
-                </li>
-                <li data-tooltip="Git"
-                  class="tech-item flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-600 rounded-lg cursor-pointer transition-all duration-300 hover:-translate-y-1">
-                  <img loading="lazy" src="./images/git.png" alt="Git logo, version control system for tracking changes"
-                    class="w-7">
-                </li>
-                <li data-tooltip="Optimal Workshop"
-                  class="tech-item flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-600 rounded-lg cursor-pointer transition-all duration-300 hover:-translate-y-1">
-                  <img loading="lazy" src="./images/optimal-workshop.png"
-                    alt="Optimal Workshop logo, user research and testing tools" class="w-7">
-                </li>
-
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    
 
     <!-- Experience Section -->
-    <section id="experience" class="experience mb-10">
+    <!-- <section id="experience" class="experience mb-10">
       <h1 class="text-3xl sm:text-5xl lg:text-5xl mb-4 text-center font-semibold">MY EXPERIENCE</h1>
       <div class="experience-section">
         <div class="experience-item">
@@ -432,7 +434,7 @@
         </div>
       </div>
 
-    </section>
+    </section> -->
 
     
 
@@ -482,7 +484,7 @@
 
     <!-- Contact Section -->
     <section id="contact" class="w-full px-[12%] py-10 scroll-mt-20">
-      <h4 class="text-center mb-2 text-lg text-custom-red tracking-minus-5">Connect with me</h4>
+      <h4 class="text-center mb-2 text-lg text-black tracking-minus-5">Connect with me</h4>
       <h2 class="text-center text-5xl font-semibold">GET IN TOUCH</h2>
       <p class="text-center max-w-2xl mx-auto mt-5 mb-12">I'd hove to hear from you! If you would like to get in touch
         please use the form below.</p>
@@ -512,19 +514,20 @@
   <!-- Footer Section -->
   <footer class="mt-20">
     <div class="text-center">
-      <a href="#home"><img loading="lazy" src="./images/av-logo.png" alt="Aren Villano logo"
+      <a href="#home"><img loading="lazy" src="./images/av.png" alt="Aren Villano logo"
           class="w-20 mx-auto mb-2"></a>
       <div class="w-max flex items-center gap-2 mx-auto">
         <img loading="lazy" src="./images/email.png" alt="Email icon" class="w-6">
-        arenvillano@gmail.com
+        a.villano@45press.com
       </div>
     </div>
-    <div class="text-center sm:flex items-center justify-between border-t border-white mx-[10%] mt-12 py-6">
-      <p>&copy; 2024 Aren Villano. All rights reserved</p>
+    <div class="text-center sm:flex items-center justify-between border-t border-black mx-[10%] mt-12 py-6">
+      <p>&copy; 2025 Aren Villano. All rights reserved</p>
       <ul class="flex items-center gap-10 justify-center mt-4 sm:mt-0">
         <li><a href="https://www.linkedin.com/in/aren-villano" class="hover:underline">LinkedIn</a></li>
         <li><a href="https://www.behance.net/arenvillano1" class="hover:underline">Behance</a></li>
-        <li><a href="https://github.com/arenv07" class="hover:underline">GitHub</a></li>
+        <!-- <li><a href="https://github.com/arenv07" class="hover:underline">GitHub</a></li> -->
+        <li><a href="https://45press.com/" class="hover:underline">45Press.com</a></li>
       </ul>
     </div>
   </footer>
@@ -646,10 +649,10 @@
         uScroll: { value: 0 },
         uColors: {
           value: [
-            new THREE.Color(0xFAF9F6),
-            new THREE.Color(0xD8D8D8),
-            new THREE.Color(0xCACACA),
-            new THREE.Color(0xBABABA)
+            new THREE.Color(0xFF9E17),
+            new THREE.Color(0xFEA72E),
+            new THREE.Color(0xFDAF43),
+            new THREE.Color(0xFCB95A)
           ]
         }
       },
