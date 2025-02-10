@@ -518,3 +518,8 @@ canvas {
 .iu-logo {
   scale: 0.6;
 }
+
+/* Project page */
+.project-page {
+  background-color: #FF9E17;
+}

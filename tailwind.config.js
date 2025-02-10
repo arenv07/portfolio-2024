@@ -8,6 +8,7 @@ tailwind.config = {
           'dark-blue': '#1A1D29',
           'matte-black': '#28282B',
           'dark-theme': '#11001F',
+          'custom-grey': '#4a4a4a',
           clifford: '#da373d',
         },
         fontFamily: {
